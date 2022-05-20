@@ -60,9 +60,8 @@ const TimeLine: FunctionComponent<TimeLineProps> = ({}) => {
           </div>
           <div className="card">
             <div className="info">
-              <h3 className="title mt-3">on time delivery.</h3>
+              <h3 className="title mt-3">environment club.</h3>
               <div className="mt-2 font-bold">
-                time means a loat to us.
                 <div className="mt-14  lg:grid lg:grid-cols-12 lg:grid-flow-col">
                   <div className="col-span-5">
                     <div className="my-10 text-3xl font-semibold text-black">

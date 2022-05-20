@@ -29,10 +29,10 @@ const Home: FunctionComponent<HomeProps> = () => {
       <Glary />
       <div className="my-32 py-10 flex">
         <button
-          onClick={() => nav("/about")}
+          onClick={() => nav("/events")}
           className="mx-auto w-1/4 bg-primary py-3 px-2 text-white  border-white rounded-md hover:scale-105 hover:delay-100"
         >
-          About Us
+          Envents
         </button>
       </div>
       <Footer />

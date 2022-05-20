@@ -33,22 +33,20 @@ const TimeLine: FunctionComponent<TimeLineProps> = ({}) => {
           </div>
           <div className="card p-3 md:p-0">
             <div className="info">
-              <h3 className="title font-bold mt-3">technology club</h3>
+              <h3 className="title font-bold mt-3">mechanical engineering</h3>
               <div className="mt-2 font-bold">
                 <div className="text-center md:text-right font-bold"> </div>
                 <div className="mt-14  lg:grid lg:grid-cols-12 lg:grid-flow-col">
                   <img
-                    src={
-                      "https://res.cloudinary.com/mentor-square/image/upload/v1648997376/2_zkop2n.png"
-                    }
+                    src="https://res.cloudinary.com/mentor-square/image/upload/v1653031615/40796_lchxuo.jpg"
                     alt=""
-                    className="aspect-[738/511] scale-125 col-span-7"
+                    className="aspect-auto h-[500px] scale-125 col-span-7"
                   />
                   <div className="col-span-5">
                     <div className="my-10 text-3xl font-semibold text-black">
                       this wouldn't be pobbile without{" "}
                       <span className="text-primary my-10 text-3xl font-semibold">
-                        tech !
+                        mechanical engineers !
                       </span>
                     </div>
                   </div>
@@ -58,46 +56,22 @@ const TimeLine: FunctionComponent<TimeLineProps> = ({}) => {
           </div>
           <div className="card">
             <div className="info">
-              <h3 className="title mt-3">environment club</h3>
+              <h3 className="title mt-3">civil engineering</h3>
               <div className="mt-2 font-bold">
-                we give nature a voice.
                 <div className="mt-14  lg:grid lg:grid-cols-12 lg:grid-flow-col">
                   <div className="col-span-5">
                     <div className="my-10 text-3xl font-semibold text-black">
-                      save nature for{" "}
+                      a humans need{" "}
                       <span className="text-primary my-10 text-3xl font-semibold">
-                        better future.
+                        a shelter.
                       </span>
                     </div>
                   </div>
                   <img
-                    src="https://res.cloudinary.com/mentor-square/image/upload/v1653029835/3736569_lcakoa.jpg"
+                    src="https://res-console.cloudinary.com/mentor-square/thumbnails/transform/v1/image/upload//v1653032372/Q2l2aWxfZW5naW5lZXJfZWFtcnEw/drilldown"
                     alt=""
                     className="aspect-auto scale-80 lg:-translate-y-28 -translate-y-4 col-span-7"
                   />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="card">
-            <div className="info">
-              <h3 className="title font-bold mt-3">art club</h3>
-              <div className="mt-2 font-bold">
-                <div className="text-center md:text-right font-bold"> </div>
-                <div className="mt-14  lg:grid lg:grid-cols-12 lg:grid-flow-col">
-                  <img
-                    src="https://res.cloudinary.com/mentor-square/image/upload/v1653031108/artclub_hiqqna.jpg"
-                    alt=""
-                    className="aspect-[738/511] scale-125 col-span-7"
-                  />
-                  <div className="col-span-5">
-                    <div className="my-10 text-3xl font-semibold text-black">
-                      giving your life{" "}
-                      <span className="text-primary my-10 text-3xl font-semibold">
-                        colors !
-                      </span>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

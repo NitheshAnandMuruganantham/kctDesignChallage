@@ -10,7 +10,7 @@ const Nav: FunctionComponent<NavProps> = () => {
   return (
     <div className="bg-white relative shadow-sm w-full h-14 justify-between  flex z-50">
       <div className="w-full md:w-1/4 lg:w-1/4 h-full flex items-center justify-between p-5 font-display text-primary text-xl font-semibold">
-        <div>Kumaraguru college of technology</div>
+        <div>SUGANTHAM CREATIONS</div>
         <button
           onClick={() => setShow(!show)}
           className={` ${
@@ -36,23 +36,23 @@ const Nav: FunctionComponent<NavProps> = () => {
         </li>
         <li className="mr-5">
           <NavLink
-            to="/departments"
+            to="/events"
             className={` ${
-              loc.pathname === "/departments" ? "text-primary" : "text-black"
+              loc.pathname === "/events" ? "text-primary" : "text-black"
             }  text-xl font-light relative`}
           >
-            departments
-            {loc.pathname === "/departments" && (
-              <div className="rounded-full bg-teal-300 h-2 translate-x-20 ml-2 -translate-y-9 w-2 absolute" />
+            Events
+            {loc.pathname === "/events" && (
+              <div className="rounded-full bg-teal-300 h-2 translate-x-14 ml-2 -translate-y-9 w-2 absolute" />
             )}
           </NavLink>
         </li>
         <li className="mr-5">
           <button
-            onClick={() => navigate("/login")}
+            onClick={() => navigate("/contact")}
             className="bg-primary border-2 shadow-md  text-white py-1 px-5 m-0.5 rounded-[6px]"
           >
-            log in
+            Log In
           </button>
         </li>
       </ul>
