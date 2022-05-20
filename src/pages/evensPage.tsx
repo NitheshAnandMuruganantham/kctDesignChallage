@@ -3,7 +3,7 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
-
+import ImageUploading from "react-images-uploading";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
@@ -13,7 +13,6 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Autocomplete } from "@mui/material";
 import { firestore } from "../firebase";
 import { doc, setDoc } from "firebase/firestore";
-
 const theme = createTheme();
 
 function randomString(length: number) {
@@ -33,6 +32,11 @@ function randomString(length: number) {
 
 export default function SignUp() {
   const [club, SetClub] = React.useState("");
+  const [images, SetImages] = React.useState<any>();
+  const ImageonChange = (imageList: any, addUpdateIndex: any) => {
+    console.log(imageList, addUpdateIndex);
+    SetImages(imageList);
+  };
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -122,6 +126,7 @@ export default function SignUp() {
                 />
               </Grid>
             </Grid>
+
             <Button
               type="submit"
               fullWidth

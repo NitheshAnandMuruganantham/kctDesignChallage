@@ -12,6 +12,7 @@
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.8.0",
     "@mui/material": "^5.8.0",
+    "add": "^2.0.6",
     "autoprefixer": "^10.4.7",
     "firebase": "^9.8.1",
     "formik": "^2.2.9",
@@ -21,8 +22,10 @@
     "react-dom": "^18.0.0",
     "react-firebase-hooks": "^5.0.3",
     "react-firebaseui": "^6.0.0",
+    "react-images-uploading": "^3.1.6",
     "react-loader-spinner": "^6.0.0-0",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "yarn": "^1.22.18"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
