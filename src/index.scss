@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+html::-webkit-scrollbar-thumb {
+    background: #1090CB;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+.timeline {
+    background:white;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+.card {
+    margin-left :auto;
+    margin-right :auto;
+}
+
+@media screen and (min-width: 640px) {
+    
+.card {
+    position: relative;
+    max-width: 80%;
+    height: 750px;
+    margin-left :auto;
+    margin-right :auto;
+}
+
+.card:nth-child(odd) {
+    padding: 30px 0 10px 34px;
+}
+
+.card:nth-child(even) {
+    padding: 30px 34px 30px 0;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border-color: #ccc;
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: 50% 80px;
+}
+
+.card:nth-child(odd)::before {
+    left: 0px;
+    top: -4.5px;
+    bottom: -4.5px;
+    border-width: 5px 0 5px 5px;
+    border-radius: 50px 0 0 50px;
+}
+
+.card:nth-child(even)::before {
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    border-width: 5px 5px 5px 0;
+    border-radius: 0 50px 50px 0;
+}
+
+.card:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+}
+
+.card:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+}
+
+.card:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    color: gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.title {
+    color: black;
+    position: relative;
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-size: large;
+    font-family: poppins, sans-serif;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 100%;
+    background-color: #1090CB;
+}
+
+.card:nth-child(even)>.info>.title {
+    text-align: right;
+}
+
+.card:nth-child(odd)>.info>.title::before {
+    left: -66px;
+}
+
+.card:nth-child(even)>.info>.title::before {
+    right: -66px;
+}
+
+}
